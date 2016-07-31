@@ -1,1 +1,199 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hey there! I'm Jeannie</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+
+    <style>
+
+        div {
+            margin-right: 50px;
+            margin-left: 10px;
+        }
+
+        h1 {
+
+            /*font-family: 'Poiret One', cursive;*/
+            /*font-family: 'Bungee Shade', cursive;*/
+            font-family: 'Bungee Shade', cursive;
+            font-family: 'Bungee Inline', cursive;
+            font-size: 50px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 55px;
+            margin-right: 50px;
+            margin-left: 50px;
+            color: gold;
+            /*background-color: antiquewhite;*/
+            transition: color 200ms ease;
+
+
+        }
+
+        h2 {
+            padding: 10px 5px;
+            font-family: Pacifico;
+            font-size: 50px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        h3 {
+            padding: 10px 5px;
+            font-family: "Anonymous Pro";
+            font-size: 45px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #808B96;
+            font-family: 'Bitter', serif;
+            font-size: 24px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        html {
+            background: url(homepage.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+
+        h1.blink {
+            color : transparent;}
+
+        a:hover {
+            text-decoration: underline;
+            color: #5940BF;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+<ul>
+    <li id="home" class="active"><a href="#Home">Home</a></li>
+    <li id="aboutMe" class="active"><a href="#About-Me">About Me</a></li>
+    <li id="resume" class="active"><a href="#Resume">Resume</a></li>
+    <li id="projects" class="active"><a href="#Projects">Projects</a></li>
+</ul>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <h1 align="center">Hey there! I'm Jeannie and <br>I'm a designer/developer.</h1>
+
+<br>
+
+<div id='container'>
+
+    <!--<img align="center" src="change.png" alt="main" id="main"-->
+         <!--onmouseover="this.src = 'main3.png'"-->
+         <!--onmouseout="this.src = 'change.png'"-->
+        <!--onplay="">-->
+    <!---->
+    <!--<img border="0" src="DarkDesign.png" alt="designerbtn" id="Designer"-->
+         <!--onmouseover="this.src = 'lightDesign.png'"-->
+         <!--onmouseout="this.src = 'DarkDesign.png'">-->
+    <!--<img id="Developer" src="DarkDev.png"-->
+         <!--onmouseover="this.src = 'lightDev.png'"-->
+         <!--onmouseout="this.src = 'DarkDev.png'">-->
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+    var pdf = "CV_Heejin An.pdf";
+
+    function getPDF(pdf) {
+        window.open(pdf)
+        return true;
+    }
+
+    $("#aboutMe").click(function () {
+        window.location.href = "aboutMe.html";
+    });
+
+    $("#projects").click(function () {
+        window.location.href = "projects.html";
+    });
+
+    $("#resume").click(function () {
+        window.location.href = "resume.html";
+//        window.location.href = "homePage.html";
+//        getPDF(pdf);
+    });
+
+    $("#home").click(function () {
+        window.location.href = "homePage.html";
+    });
+
+    $(function(){
+        window.setInterval(function(){
+            // 'blink' class is toggled into 'P' tag between the interval of 500 ms
+            $('h1').toggleClass('blink');
+        }, 600);
+    });
+
+
+</script>
+
+
+</body>
+</html>
