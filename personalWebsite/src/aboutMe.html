@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+
+
+    <style>
+        h1 {
+            font-family: 'Poiret One', cursive;
+            font-size: 45px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        div {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'PT Serif', serif;
+
+            /*position: relative;*/
+            /*width: 100%;*/
+        }
+
+        .left {
+            /*position: relative;*/
+            /*left: 20px;*/
+            /*width: 300px;*/
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Bitter', serif;
+            .container();
+        }
+
+        .right {
+            /*position: absolute;*/
+            /*right: 0px;*/
+            /*width: 600px;*/
+            background-color: antiquewhite;
+            font-family: 'PT Serif', serif;
+            .container();
+
+        }
+
+        h2 {
+            /*padding: 10px 5px;*/
+            font-family: Pacifico;
+            font-size: 50px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+            margin-right: 50px;
+        }
+
+        h3 {
+            padding: 10px 5px;
+            font-family: "Anonymous Pro";
+            font-size: 45px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #808B96;
+            font-family: 'Bitter', serif;
+            font-size: 24px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        html {
+            background: url(homepage.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: #5940BF;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #5940BF;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<ul>
+    <li id="home" class="active"><a href="#Home">Home</a></li>
+    <li id="aboutMe" class="active"><a href="#About-Me">About Me</a></li>
+    <li id="resume" class="active"><a href="#Resume">Resume</a></li>
+    <li id="projects" class="active"><a href="#Projects">Projects</a></li>
+</ul>
+
+<div class='container'>
+
+    <!--<img src='profilecopy.jpg' style='float: left;'/>-->
+<
+    <div class = "right">
+        <p><font size="4" color="#696969"><br>I'm a self-motivated and a
+            tech savvy student, experienced in both front-end and back-end
+            development. I am originally from South Korea but have lived in 5
+            different countries. I have just finished my placement year with
+            Deutsche bank and will be returning to University of Birmingham in September to
+            continue my study in computer science. I am looking for exciting work
+            to further develop my technical skills.
+
+            <br><br>In my spare time, I like to play water sports and develop tech snazzy things, please check the projects tab for
+            more interesting stuff!
+            <br><br>Feel free to email me at
+            <a href="mailto:hjeanniean@gmail.com?Subject=Hi%20Jeannie" target="_top">hjeanniean@gmail.com</a> if you are interested.
+            <br><br>
+            Also, you can check out my video which I filmed with the University of Birmingham!
+            <br><br>
+        </font></p>
+    </div>
+    <br>
+    <div class = "left">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5agTsDWVwpI" style="float: left" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+    var pdf = "CV_Heejin An.pdf";
+
+    function getPDF(pdf) {
+        window.open(pdf)
+        return true;
+    }
+
+    $("#home").click(function () {
+        window.location.href = "homePage.html";
+    });
+    $("#aboutMe").click(function () {
+        window.location.href = "aboutMe.html";
+    });
+    $("#projects").click(function () {
+        window.location.href = "projects.html";
+    });
+
+    $("#resume").click(function () {
+        window.location.href = "resume.html";
+
+    });
+
+</script>
+
+</body>
+</html>
