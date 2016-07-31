@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+
+
+    <style>
+        h1 {
+            font-family: 'Poiret One', cursive;
+            font-size: 45px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        div {
+            margin-right: 50px;
+            margin-left: 50px;
+
+        }
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Bitter', serif;
+            background-color: antiquewhite;
+
+
+            /*position: relative;*/
+            /*width: 100%;*/
+        }
+
+        .left {
+            /*position: relative;*/
+            /*left: 20px;*/
+            /*width: 300px;*/
+        .container();
+
+        }
+
+        h2 {
+            padding: 10px 5px;
+            font-family: Pacifico;
+            font-size: 50px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        h3 {
+            padding: 10px 5px;
+            font-family: "Anonymous Pro";
+            font-size: 45px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #808B96;
+            font-family: 'Bitter', serif;
+            font-size: 24px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        html {
+            background: url(homepage.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f1c232;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #5940BF;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<ul>
+    <li id="home" class="active"><a href="#Home">Home</a></li>
+    <li id="aboutMe" class="active"><a href="#About-Me">About Me</a></li>
+    <li id="resume" class="active"><a href="#Resume">Resume</a></li>
+    <li id="projects" class="active"><a href="#Projects">Projects</a></li>
+</ul>
+
+<br>
+
+<div class='container'>
+
+    <div class = "left">
+
+    <p><font size="4" color= #696969>
+        <br>
+        Please stay tuned for updates!
+        <br>
+    </font></p>
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+    var pdf = "CV_Heejin An.pdf";
+
+    function getPDF(pdf) {
+        window.open(pdf)
+        return true;
+    }
+
+    $("#home").click(function () {
+        window.location.href = "homePage.html";
+    });
+    $("#aboutMe").click(function () {
+        window.location.href = "aboutMe.html";
+    });
+    $("#resume").click(function () {
+        window.location.href = "resume.html";
+
+    });
+    $("#projects").click(function () {
+        window.location.href = "projects.html";
+    });
+
+</script>
+
+</body>
+</html>
