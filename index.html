@@ -19,10 +19,21 @@
         div {
             margin-right: 50px;
             margin-left: 10px;
+            font-family: 'Bungee Shade', cursive;
+            font-family: 'Bungee Inline', cursive;
+            font-size: 50px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 55px;
+            margin-right: 50px;
+            margin-left: 50px;
+            color: gold;
+            transition: color 200ms ease;
         }
 
-        h1 {
 
+        h1 {
             /*font-family: 'Poiret One', cursive;*/
             /*font-family: 'Bungee Shade', cursive;*/
             font-family: 'Bungee Shade', cursive;
@@ -35,31 +46,10 @@
             margin-right: 50px;
             margin-left: 50px;
             color: gold;
-            /*background-color: antiquewhite;*/
             transition: color 200ms ease;
-
-
+            background-color: dimgrey;
         }
 
-        h2 {
-            padding: 10px 5px;
-            font-family: Pacifico;
-            font-size: 50px;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 500;
-            line-height: 26.4px;
-        }
-
-        h3 {
-            padding: 10px 5px;
-            font-family: "Anonymous Pro";
-            font-size: 45px;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 500;
-            line-height: 26.4px
-        }
 
         ul {
             list-style-type: none;
@@ -95,14 +85,13 @@
             background-size: cover;
         }
 
-
-        h1.blink {
-            color : transparent;}
-
         a:hover {
             text-decoration: underline;
             color: #5940BF;
         }
+
+        p.blink {
+            color : transparent;}
 
     </style>
 
@@ -132,34 +121,26 @@
 <br>
 <br>
 <br>
-
-    <h1 align="center">Hey there! I'm Jeannie and <br>I'm a designer/developer.</h1>
-
 <br>
 
-<div id='container'>
-
-    <!--<img align="center" src="change.png" alt="main" id="main"-->
-         <!--onmouseover="this.src = 'main3.png'"-->
-         <!--onmouseout="this.src = 'change.png'"-->
-        <!--onplay="">-->
-    <!---->
-    <!--<img border="0" src="DarkDesign.png" alt="designerbtn" id="Designer"-->
-         <!--onmouseover="this.src = 'lightDesign.png'"-->
-         <!--onmouseout="this.src = 'DarkDesign.png'">-->
-    <!--<img id="Developer" src="DarkDev.png"-->
-         <!--onmouseover="this.src = 'lightDev.png'"-->
-         <!--onmouseout="this.src = 'DarkDev.png'">-->
-
-
-</div>
-
+    <h1 align="center" id="typewriter">Hey there! I'm Jeannie and<br>I'm a designer/developer</h1><p id = "cursor">|</p>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script src="typed.js"></script>
+
 <script>
 
     var pdf = "CV_Heejin An.pdf";
+
+    $(function(){
+        $("#typewriter").typed({
+            strings: ["Hey there! I'm Jeannie and I'm a designer/developer."],
+            typeSpeed: 0
+        });
+    });
 
     function getPDF(pdf) {
         window.open(pdf)
@@ -176,8 +157,6 @@
 
     $("#resume").click(function () {
         window.location.href = "resume.html";
-//        window.location.href = "homePage.html";
-//        getPDF(pdf);
     });
 
     $("#home").click(function () {
@@ -187,10 +166,9 @@
     $(function(){
         window.setInterval(function(){
             // 'blink' class is toggled into 'P' tag between the interval of 500 ms
-            $('h1').toggleClass('blink');
-        }, 600);
+            $('cursor').toggleClass('blink');
+        }, 1000);
     });
-
 
 </script>
 
